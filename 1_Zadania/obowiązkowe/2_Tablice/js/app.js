@@ -46,4 +46,29 @@ function multiply(array) {
     return sum;
 }
 
-multiply([1,2,3,4,5,6,7]);
+// multiply([1,2,3,4,5,6,7]);
+
+//zad05
+function getEvenAvarage(array) {
+    let avg = 0;
+    let evenArray = [];
+    array.forEach(item => {
+        if(item %2 == 0) {
+            evenArray.push(item);
+        }
+    })
+
+    if(evenArray.length == 0) {
+        return null;
+    }
+
+    let sum = evenArray.reduce((prev, next) => prev + next);
+    avg = sum / evenArray.length;
+
+    console.log(avg);
+    return avg;
+}
+
+getEvenAvarage([1,2,3,4,5,6,7]);
+getEvenAvarage([1,1,1,1]);
+getEvenAvarage([2,8,3,7,4]);
