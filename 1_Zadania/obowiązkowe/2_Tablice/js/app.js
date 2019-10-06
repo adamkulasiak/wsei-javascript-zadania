@@ -65,10 +65,19 @@ function getEvenAvarage(array) {
     let sum = evenArray.reduce((prev, next) => prev + next);
     avg = sum / evenArray.length;
 
-    console.log(avg);
+    // console.log(avg);
     return avg;
 }
 
-getEvenAvarage([1,2,3,4,5,6,7]);
-getEvenAvarage([1,1,1,1]);
-getEvenAvarage([2,8,3,7,4]);
+// getEvenAvarage([1,2,3,4,5,6,7]);
+// getEvenAvarage([1,1,1,1]);
+// getEvenAvarage([2,8,3,7,4]);
+
+//zad06
+function sortArray(array) {
+    array.sort((a,b) => a - b);
+    console.log(array);
+    return array;
+}
+
+sortArray([145,11,3,64,4,6,10]);
