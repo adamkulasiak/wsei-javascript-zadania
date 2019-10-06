@@ -34,4 +34,16 @@ function printTable(array) {
     })
 }
 
-printTable([1,2,3,4,5,6,7,8,9]);
+// printTable([1,2,3,4,5,6,7,8,9]);
+
+//zad04
+function multiply(array) {
+    let sum = 1;
+    for(var i=0; i<array.length; i++) {
+        sum *= array[i];
+    }
+    console.log(sum);
+    return sum;
+}
+
+multiply([1,2,3,4,5,6,7]);
