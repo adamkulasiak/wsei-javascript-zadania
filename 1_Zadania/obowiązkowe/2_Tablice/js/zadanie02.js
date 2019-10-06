@@ -1,6 +1,6 @@
 
 function createArray(number) {
-    var newArray = [10];
+    var newArray = [];
 
     for (var counter = 1; ; counter <= number) {
         newArray.push(counter);
