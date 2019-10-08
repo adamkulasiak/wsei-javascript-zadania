@@ -87,4 +87,22 @@ let handMadeArray = [
     [5,6,7,8],
     [9,10,true, false]
 ];
-print2DArray(handMadeArray);
+//print2DArray(handMadeArray);
+
+//zad05
+function create2DArray(row_num, col_num) {
+    let tabToReturn = [];
+    let temp = [];
+    let value = 1;
+    for(let i = 0; i < row_num; i++) {
+        for(let j = 0; j < col_num; j++) {
+            temp.push(value++);
+        }
+        tabToReturn.push(temp);
+        temp = [];
+    }
+    console.log(tabToReturn);
+    return tabToReturn;
+}
+
+create2DArray(5,6); 
