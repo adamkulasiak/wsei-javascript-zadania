@@ -26,7 +26,7 @@ function checkArray(arr2D) {
             }
         })   
     });
-    console.log(newArr);
+    //console.log(newArr);
     return newArr;
 }
 var arr = [
@@ -36,4 +36,21 @@ var arr = [
     [0, 0],
     [1, 34],
     ];
-checkArray(arr);
+// checkArray(arr);
+
+//zad01
+
+//1
+console.log(task1Array[3][2]);
+
+//2
+task1Array.forEach(elem => {
+    console.log(elem.length);
+});
+
+//3
+for(let i = 0; i < task1Array.length; i++) {
+    for(let j = 0; j < task1Array[i].length; j++) {
+        console.log(task1Array[i][j]);
+    }
+}
