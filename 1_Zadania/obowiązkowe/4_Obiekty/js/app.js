@@ -25,6 +25,15 @@ const timeMachine = {
         console.log(`Now(${date}) we are in ${place}`);
     }
 };
-console.log(`shape: ${timeMachine.shape}`);
-console.log(`model: ${timeMachine.model}`);
-timeMachine.run('2050-01-01', 'the Moon');
+// console.log(`shape: ${timeMachine.shape}`);
+// console.log(`model: ${timeMachine.model}`);
+// timeMachine.run('2050-01-01', 'the Moon');
+
+//zad01
+
+const book = {
+    title: 'Programming in C#',
+    author: 'Gall anonim',
+    numberOfPages: 999
+};
+console.log(book);
