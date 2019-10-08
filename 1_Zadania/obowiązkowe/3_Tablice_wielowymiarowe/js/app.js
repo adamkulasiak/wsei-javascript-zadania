@@ -74,9 +74,17 @@ for(let i = 0; i < task2Array.length; i++) {
 function print2DArray(arr2D) {
     arr2D.forEach(elem => {
         elem.forEach(el => {
-            console.log(el);
+           console.log(el);
         })
     })
 }
 
-print2DArray(arr);
+//print2DArray(arr);
+
+//zad04
+let handMadeArray = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,true, false]
+];
+print2DArray(handMadeArray);
