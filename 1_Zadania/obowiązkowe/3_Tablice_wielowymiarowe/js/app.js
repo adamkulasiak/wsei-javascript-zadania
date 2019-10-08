@@ -41,16 +41,31 @@ var arr = [
 //zad01
 
 //1
-console.log(task1Array[3][2]);
+// console.log(task1Array[3][2]);
 
 //2
 task1Array.forEach(elem => {
-    console.log(elem.length);
+    // console.log(elem.length);
 });
 
 //3
 for(let i = 0; i < task1Array.length; i++) {
     for(let j = 0; j < task1Array[i].length; j++) {
-        console.log(task1Array[i][j]);
+        // console.log(task1Array[i][j]);
+    }
+}
+
+//zad02
+
+//1
+task2Array.forEach(elem => console.log(elem));
+
+//2
+task2Array.forEach(elem => console.log(elem.length));
+
+//3
+for(let i = 0; i < task2Array.length; i++) {
+    for(let j = 0; j < task2Array[i].length; j++) {
+        console.log(task2Array[i][j]);
     }
 }
