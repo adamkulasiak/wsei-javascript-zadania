@@ -58,14 +58,25 @@ for(let i = 0; i < task1Array.length; i++) {
 //zad02
 
 //1
-task2Array.forEach(elem => console.log(elem));
+//task2Array.forEach(elem => console.log(elem));
 
 //2
-task2Array.forEach(elem => console.log(elem.length));
+//task2Array.forEach(elem => console.log(elem.length));
 
 //3
 for(let i = 0; i < task2Array.length; i++) {
     for(let j = 0; j < task2Array[i].length; j++) {
-        console.log(task2Array[i][j]);
+        // console.log(task2Array[i][j]);
     }
 }
+
+//zad03
+function print2DArray(arr2D) {
+    arr2D.forEach(elem => {
+        elem.forEach(el => {
+            console.log(el);
+        })
+    })
+}
+
+print2DArray(arr);
