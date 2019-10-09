@@ -36,4 +36,16 @@ const book = {
     author: 'Gall anonim',
     numberOfPages: 999
 };
-console.log(book);
+// console.log(book);
+
+//zad02
+
+const person = {
+    name: 'Jan Kowalski',
+    age: 50,
+    sayHello: () => {
+        console.log('Hello');
+    }
+};
+console.log(`name: ${person.name}, age: ${person.age}`);
+person.sayHello();
