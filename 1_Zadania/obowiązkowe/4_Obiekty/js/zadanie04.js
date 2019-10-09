@@ -9,3 +9,9 @@ var movie = {
     time: "2h 58 min",
     category: " Adventure, Drama, Fantasy"
 }
+
+//zad04
+
+for (const key in movie) {
+    console.log(`${key} : ${movie[key]}`);
+}
