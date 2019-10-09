@@ -70,3 +70,13 @@ favouriteRecipe.ingredients = [
 
 // console.log(`title: ${favouriteRecipe.title}, servings: ${favouriteRecipe.servings}, ingredients: ${favouriteRecipe.ingredients}`);
 
+//zad06
+
+var spoon = {
+    isExist: true
+}
+
+var fork = spoon;
+fork.isExist  = false;
+
+console.log(spoon.isExist);
