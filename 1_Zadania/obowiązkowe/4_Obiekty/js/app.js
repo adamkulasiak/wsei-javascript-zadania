@@ -47,5 +47,25 @@ const person = {
         console.log('Hello');
     }
 };
-console.log(`name: ${person.name}, age: ${person.age}`);
-person.sayHello();
+// console.log(`name: ${person.name}, age: ${person.age}`);
+// person.sayHello();
+
+//zad03
+
+const favouriteRecipe = {
+    title: 'pizza',
+    servings: 4
+};
+
+favouriteRecipe.ingredients = [
+    'flour',
+    'eggs',
+    'water',
+    'salt',
+    'yeast',
+    'tomatoes',
+    'ham',
+    'cheese'
+];
+
+console.log(`title: ${favouriteRecipe.title}, servings: ${favouriteRecipe.servings}, ingredients: ${favouriteRecipe.ingredients}`);
