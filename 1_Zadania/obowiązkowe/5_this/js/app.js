@@ -36,3 +36,23 @@ car.getAllInspections = function() {
 // car.addDateOfInspection('2016-02-02');
 // console.log(car.getAllInspections());
 
+
+//zad03
+const stairs = {
+    step: 0,
+    up: function() {
+        this.step++;
+    },
+    down: function() {
+        this.step--;
+    },
+    printStep: function() {
+        console.log(this.step);
+    }
+};
+
+stairs.up();
+stairs.up();
+stairs.up();
+stairs.down(); 
+stairs.printStep()
