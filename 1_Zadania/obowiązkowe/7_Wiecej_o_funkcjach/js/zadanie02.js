@@ -12,3 +12,14 @@ callOtherFunction(function (a, b) {
     console.log("Wynik", a + b)
 })
 
+callOtherFunction((a, b) => {
+    console.log('Wynik: ', a/b);
+})
+
+callOtherFunction((a,b) => {
+    console.log('Wynik: ', a*b);
+})
+
+callOtherFunction((a,b) => {
+    console.log('Wynik: ', a-b);
+})
