@@ -5,21 +5,22 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+// funkcja majaca w srodku tablice do posortowania
 function sortArray() {
 
-    //Twoj komentarz ...
+    // tablica z wartosciami typu number do posortowania
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    // funkcja sortujaca tablice od wartosci najmniejszej do najwiekszej
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        // w srodku sort tzw compare function ktora porownuje elementy tablicy i sortuje je
+        // domyslnie w js sort sortuje w porzadku alfabetycznym dlatego zeby posortowac liczby musimy uzyc compare function
         return a - b;
     });
 
-    //Twoj komentarz ...
+    // zwrocenie posortowanej tablicy liczb
     return points;
 }
 
-//Twoj komentarz ...
+// wywolanie funkcji
 sortArray();
