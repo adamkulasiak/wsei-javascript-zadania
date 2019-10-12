@@ -1,4 +1,4 @@
-# Wyszukiwanie elementów na stronie HTML
+`=--q fd# Wyszukiwanie elementów na stronie HTML
 
 > Odpowiedzi wpisz w pliku **app.js**, chyba że treść polecenia wskazuje inaczej.
 Pamiętaj, żeby oddzielać ćwiczenia komentarzami i pisać czytelny, dobrze sformatowany kod.
