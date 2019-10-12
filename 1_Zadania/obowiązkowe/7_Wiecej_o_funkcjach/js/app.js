@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+// funkcja zewnetrzna
 function jeden() {
 
-    //Twoj komentarz ...
+    // zmienna lokalna w funkcji zewnetrznej
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    // funkcja wewnetrzna
     function dwa() {
 
-        //Twoj komentarz ...
+        // funkcja wewnetrzna ma dostep do zmiennej w funkcji zewnetrznej dlatego to zadziala
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        // zmienna lokalna w funkcji wewnetrznej do ktorej nie ma dostepu funkcja zewnetrzna
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    // wywolanie funkcji wewnetrznej z funkcji zewnetrznej, zadziala
     dwa();
 
-    //Twoj komentarz ...
+    // proba wyswietlenia zmiennej w funkcji wewnetrznej z poza tej funkcji, nie ma dostepu do tej zmiennej dlatego to nie zadziala
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+// wywolanie funkcji zewnetrznej a co za tym idzie wewnetrzej tez bo funkcja zewnetrzna w srodku wywoluje funkcje wewnetrzna
 jeden()
