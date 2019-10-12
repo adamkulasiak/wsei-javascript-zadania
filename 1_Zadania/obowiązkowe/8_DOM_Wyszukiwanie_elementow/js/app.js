@@ -40,4 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const divsInArticle = document.querySelectorAll('article div');
     console.log(divsInArticle.length);
 
+
+    //zad03
+
+    const firstArticle = document.querySelector('article.first');
+    const h1 = firstArticle.querySelectorAll('h1');
+    console.log(h1.length);
+
 });
