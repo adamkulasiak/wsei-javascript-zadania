@@ -9,4 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
     Poniżej napisz kod rozwiązujący zadania
      */
 
+
+    // zad00
+    function getDatasInfo(elements) {
+        let newArr = [];
+        for(let i = 0; i < elements.length; i++) {
+            newArr.push(elements[i].dataset);
+        }
+
+        return newArr;
+    }
+
+    console.log(getDatasInfo(links));
+
 });
