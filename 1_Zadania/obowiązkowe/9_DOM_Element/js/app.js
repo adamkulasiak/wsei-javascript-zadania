@@ -20,6 +20,24 @@ document.addEventListener("DOMContentLoaded", function () {
         return newArr;
     }
 
-    console.log(getDatasInfo(links));
+    // console.log(getDatasInfo(links));
+
+
+    //zad 01
+    console.log(homeElement);
+
+    for(let i = 0; i < childElements.length; i++) {
+        console.log(childElements[i]);
+    }
+
+    console.log(banner);
+
+    for(let i = 0; i < blocks.length; i++) {
+        console.log(blocks[i]);
+    }
+
+    for(let i = 0; i < links.length; i++) {
+        console.log(links[i]);
+    }
 
 });
