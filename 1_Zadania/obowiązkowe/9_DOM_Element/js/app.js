@@ -24,20 +24,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //zad 01
-    console.log(homeElement);
+
+    // console.log(homeElement);
 
     for(let i = 0; i < childElements.length; i++) {
-        console.log(childElements[i]);
+        // console.log(childElements[i]);
     }
 
-    console.log(banner);
+    //console.log(banner);
 
     for(let i = 0; i < blocks.length; i++) {
-        console.log(blocks[i]);
+        // console.log(blocks[i].innerHTML);
     }
 
     for(let i = 0; i < links.length; i++) {
-        console.log(links[i]);
+        // console.log(links[i]);
     }
+
+
+    //zad02
+
+    for(let i = 0; i < blocks.length; i++) {
+        console.log(`${i} blocks innerHTML: ${blocks[i].innerHTML}`);
+        console.log(`${i} blocks outerHTML: ${blocks[i].outerHTML}`);
+    }
+
+    for(let i = 0; i < blocks.length; i++) {
+        blocks[i].innerHTML = 'Nowa wartość diva o klasie blocks';
+    }
+
+    for(let i = 0; i < blocks.length; i++) {
+        console.log(`${i} blocks innerHTML: ${blocks[i].innerHTML}`);
+    }
+
+    // innerHTML wyswietla strukture dom wewnatrz elementu a outerHTML wyswietla wraz z elementem
+    
 
 });
