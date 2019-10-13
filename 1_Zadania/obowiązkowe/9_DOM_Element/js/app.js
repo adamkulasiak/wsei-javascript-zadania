@@ -64,14 +64,28 @@ document.addEventListener("DOMContentLoaded", function () {
     //zad03
 
     const mainFooter = document.querySelector('#mainFooter');
-    console.log(mainFooter);
+    // console.log(mainFooter);
 
     function getId(element) {
         const id = element.getAttribute('id');
-        console.log(id);
+        // console.log(id);
         return id;
     }
 
     getId(mainFooter);
+
+
+    //zad04
+
+    function getTags(elements) {
+        const newArr = [];
+        for(let i = 0; i < elements.length; i++) {
+            newArr.push(elements[i].tagName);
+        }
+        console.log(newArr);
+        return newArr;
+    }
+
+    getTags(childElements);
 
 });
