@@ -92,10 +92,26 @@ document.addEventListener("DOMContentLoaded", function () {
     //zad05
 
     function getClassInfo(element) {
-        console.log(element.classList);
+        // console.log(element.classList);
         return element.classList;
     }
 
     getClassInfo(banner);
+
+
+    //zad06
+
+    const li = document.querySelectorAll('nav li');
+    console.log(li);
+    function setDataDirection(elements) {
+        for(let i = 0; i < elements.length; i++) {
+            if(elements[i].dataset.direction === undefined) {
+                elements[i].dataset.direction = 'top';
+            }
+            console.log(elements[i].dataset.direction);
+        }
+    }
+
+    setDataDirection(li);
 
 });
