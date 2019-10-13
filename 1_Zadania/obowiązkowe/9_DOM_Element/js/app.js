@@ -45,19 +45,33 @@ document.addEventListener("DOMContentLoaded", function () {
     //zad02
 
     for(let i = 0; i < blocks.length; i++) {
-        console.log(`${i} blocks innerHTML: ${blocks[i].innerHTML}`);
-        console.log(`${i} blocks outerHTML: ${blocks[i].outerHTML}`);
+        // console.log(`${i} blocks innerHTML: ${blocks[i].innerHTML}`);
+        // console.log(`${i} blocks outerHTML: ${blocks[i].outerHTML}`);
     }
 
     for(let i = 0; i < blocks.length; i++) {
-        blocks[i].innerHTML = 'Nowa wartość diva o klasie blocks';
+        // blocks[i].innerHTML = 'Nowa wartość diva o klasie blocks';
     }
 
     for(let i = 0; i < blocks.length; i++) {
-        console.log(`${i} blocks innerHTML: ${blocks[i].innerHTML}`);
+        // console.log(`${i} blocks innerHTML: ${blocks[i].innerHTML}`);
     }
 
     // innerHTML wyswietla strukture dom wewnatrz elementu a outerHTML wyswietla wraz z elementem
     
+
+
+    //zad03
+
+    const mainFooter = document.querySelector('#mainFooter');
+    console.log(mainFooter);
+
+    function getId(element) {
+        const id = element.getAttribute('id');
+        console.log(id);
+        return id;
+    }
+
+    getId(mainFooter);
 
 });
