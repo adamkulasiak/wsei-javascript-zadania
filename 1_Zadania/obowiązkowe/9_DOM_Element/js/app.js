@@ -82,10 +82,20 @@ document.addEventListener("DOMContentLoaded", function () {
         for(let i = 0; i < elements.length; i++) {
             newArr.push(elements[i].tagName);
         }
-        console.log(newArr);
+        // console.log(newArr);
         return newArr;
     }
 
     getTags(childElements);
+
+
+    //zad05
+
+    function getClassInfo(element) {
+        console.log(element.classList);
+        return element.classList;
+    }
+
+    getClassInfo(banner);
 
 });
