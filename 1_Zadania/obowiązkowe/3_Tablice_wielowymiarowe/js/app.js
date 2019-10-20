@@ -17,16 +17,16 @@ var task2Array = [
 //zad00
 function checkArray(arr2D) {
     let newArr = [];
-    arr2D.forEach(element => {
-        element.forEach(el => {
-            if(el %2 === 0) {
-                newArr.push(true);
-            }else {
-                newArr.push(false);
+    for(let i = 0; i < arr2D.length; i++) {
+        let check = true;
+        for(let j = 0; j < arr2D[i].length; j++) {
+            if(arr2D[i][j] % 2 !== 0) {
+                check = false;
+                break;
             }
-        })   
-    });
-    //console.log(newArr);
+        }
+        newArr.push(check);
+    }
     return newArr;
 }
 var arr = [
@@ -36,7 +36,7 @@ var arr = [
     [0, 0],
     [1, 34],
     ];
-// checkArray(arr);
+checkArray(arr);
 
 //zad01
 
