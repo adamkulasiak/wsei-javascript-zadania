@@ -29,4 +29,4 @@ function jeden() {
 }
 
 // wywolanie funkcji zewnetrznej a co za tym idzie wewnetrzej tez bo funkcja zewnetrzna w srodku wywoluje funkcje wewnetrzna
-jeden()
+jeden();

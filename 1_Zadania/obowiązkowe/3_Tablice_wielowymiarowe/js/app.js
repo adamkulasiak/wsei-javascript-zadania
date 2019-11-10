@@ -51,18 +51,19 @@ task1Array.forEach(elem => {
 //3
 console.log(task1Array[4][2]);
 
+
 //zad02
 
 //1
-//task2Array.forEach(elem => console.log(elem));
+task2Array.forEach(elem => console.log(elem));
 
 //2
-//task2Array.forEach(elem => console.log(elem.length));
+task2Array.forEach(elem => console.log(elem.length));
 
 //3
 for(let i = 0; i < task2Array.length; i++) {
     for(let j = 0; j < task2Array[i].length; j++) {
-        // console.log(task2Array[i][j]);
+        console.log(task2Array[i][j]);
     }
 }
 
@@ -71,11 +72,11 @@ function print2DArray(arr2D) {
     arr2D.forEach(elem => {
         elem.forEach(el => {
            console.log(el);
-        })
-    })
+        });
+    });
 }
 
-//print2DArray(arr);
+print2DArray(arr);
 
 //zad04
 let handMadeArray = [
@@ -83,7 +84,7 @@ let handMadeArray = [
     [5,6,7,8],
     [9,10,true, false]
 ];
-//print2DArray(handMadeArray);
+print2DArray(handMadeArray);
 
 //zad05
 function create2DArray(row_num, col_num) {
@@ -101,4 +102,4 @@ function create2DArray(row_num, col_num) {
     return tabToReturn;
 }
 
-create2DArray(5,6); 
+create2DArray(4,4); 

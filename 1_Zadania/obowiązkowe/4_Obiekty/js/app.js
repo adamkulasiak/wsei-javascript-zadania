@@ -36,7 +36,7 @@ const book = {
     author: 'Gall anonim',
     numberOfPages: 999
 };
-// console.log(book);
+console.log(book);
 
 //zad02
 
@@ -68,7 +68,7 @@ favouriteRecipe.ingredients = [
     'cheese'
 ];
 
-// console.log(`title: ${favouriteRecipe.title}, servings: ${favouriteRecipe.servings}, ingredients: ${favouriteRecipe.ingredients}`);
+console.log(`title: ${favouriteRecipe.title}, servings: ${favouriteRecipe.servings}, ingredients: ${favouriteRecipe.ingredients}`);
 
 //zad06
 
@@ -79,4 +79,4 @@ var spoon = {
 var fork = spoon;
 fork.isExist  = false;
 
-console.log(spoon.isExist);
+// console.log(spoon.isExist);
