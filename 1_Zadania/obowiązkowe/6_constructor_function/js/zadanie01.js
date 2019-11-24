@@ -1,6 +1,6 @@
 function Robot (name) {
     this.name = name;
-    this.isFunctional = true;
+    this.isFunctional = false;
 }
 
 Robot.prototype.sayHi = function (toWho) {
@@ -22,7 +22,7 @@ Robot.prototype.fixIt = function () {
     console.log("Robot " + this.name + " was fixed");
 };
 
-const robot = new Robot('Kazek');
-robot.sayHi('Maniek');
-robot.changeName('Wiesiek');
-robot.fixIt();
+const robot1 = new Robot('Kazek');
+robot1.sayHi('Maniek');
+robot1.changeName('Wiesiek');
+robot1.fixIt();
