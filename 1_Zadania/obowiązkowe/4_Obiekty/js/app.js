@@ -11,10 +11,10 @@ const city = {
     ]
 };
 
-// console.log(`capital: ${city.capital}`);
-// console.log(`population: ${city.population}`);
-// console.log(`president: ${city.president}`);
-// console.log(`primeMinisters: ${city.primeMinisters}`);
+console.log(`capital: ${city.capital}`);
+console.log(`population: ${city.population}`);
+console.log(`president: ${city.president}`);
+console.log(`primeMinisters: ${city.primeMinisters}`);
 
 //zad0b
 
@@ -25,9 +25,9 @@ const timeMachine = {
         console.log(`Now(${date}) we are in ${place}`);
     }
 };
-// console.log(`shape: ${timeMachine.shape}`);
-// console.log(`model: ${timeMachine.model}`);
-// timeMachine.run('2050-01-01', 'the Moon');
+console.log(`shape: ${timeMachine.shape}`);
+console.log(`model: ${timeMachine.model}`);
+timeMachine.run('2050-01-01', 'the Moon');
 
 //zad01
 
@@ -47,8 +47,8 @@ const person = {
         console.log('Hello');
     }
 };
-// console.log(`name: ${person.name}, age: ${person.age}`);
-// person.sayHello();
+console.log(`name: ${person.name}, age: ${person.age}`);
+person.sayHello();
 
 //zad03
 
@@ -79,4 +79,4 @@ var spoon = {
 var fork = spoon;
 fork.isExist  = false;
 
-// console.log(spoon.isExist);
+console.log(spoon.isExist);

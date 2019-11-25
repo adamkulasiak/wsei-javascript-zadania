@@ -12,9 +12,9 @@ const car = {
     }
 };
 
-// console.log(car.printCarinfo());
-// car.drive(20);
-// console.log(car.printCarinfo());
+console.log(car.printCarinfo());
+car.drive(20);
+console.log(car.printCarinfo());
 
 
 //zad01
@@ -33,8 +33,8 @@ car.getAllInspections = function() {
     return this.datesOfInspections;
 }
 
-// car.addDateOfInspection('2016-02-02');
-// console.log(car.getAllInspections());
+car.addDateOfInspection('2016-02-02');
+console.log(car.getAllInspections());
 
 
 //zad03

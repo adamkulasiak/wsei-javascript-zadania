@@ -6,7 +6,7 @@ function sayHi() {
 
 sayHi();
 
-// sayHello();
+sayHello();
 
 const sayHello = function() {
     console.log('Witaj');

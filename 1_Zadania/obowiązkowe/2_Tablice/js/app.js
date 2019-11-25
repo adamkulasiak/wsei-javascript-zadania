@@ -12,7 +12,7 @@ const distFromAvarage = (arr) => {
         newArray.push(item - avg);
     })
 
-    //console.log(newArray);
+    console.log(newArray);
     return newArray;
 }
 
@@ -20,11 +20,11 @@ distFromAvarage([1,2,3,4,5,6,7]);
 
 //zad01
 const favouriteFruits = ['apple', 'orange', 'pear', 'lemon'];
-// console.log(favouriteFruits[0]);
-// console.log(favouriteFruits[favouriteFruits.length-1]);
-// favouriteFruits.forEach(item => {
-//     console.log(item);
-// })
+console.log(favouriteFruits[0]);
+console.log(favouriteFruits[favouriteFruits.length-1]);
+favouriteFruits.forEach(item => {
+    console.log(item);
+})
 
 
 //zad03
@@ -34,7 +34,7 @@ function printTable(array) {
     })
 }
 
-// printTable([1,2,3,4,5,6,7,8,9]);
+printTable([1,2,3,4,5,6,7,8,9]);
 
 //zad04
 function multiply(array) {
@@ -46,7 +46,7 @@ function multiply(array) {
     return sum;
 }
 
-// multiply([1,2,3,4,5,6,7]);
+multiply([1,2,3,4,5,6,7]);
 
 //zad05
 function getEvenAvarage(array) {
@@ -65,18 +65,18 @@ function getEvenAvarage(array) {
     let sum = evenArray.reduce((prev, next) => prev + next);
     avg = sum / evenArray.length;
 
-    // console.log(avg);
+    console.log(avg);
     return avg;
 }
 
-// getEvenAvarage([1,2,3,4,5,6,7]);
-// getEvenAvarage([1,1,1,1]);
-// getEvenAvarage([2,8,3,7,4]);
+getEvenAvarage([1,2,3,4,5,6,7]);
+getEvenAvarage([1,1,1,1]);
+getEvenAvarage([2,8,3,7,4]);
 
 //zad06
 function sortArray(array) {
     array.sort((a,b) => a - b);
-    // console.log(array);
+    console.log(array);
     return array;
 }
 
