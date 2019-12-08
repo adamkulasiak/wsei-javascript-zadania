@@ -14,48 +14,49 @@ document.addEventListener("DOMContentLoaded", function () {
     function getDatasInfo(elements) {
         let newArr = [];
         for(let i = 0; i < elements.length; i++) {
-            newArr.push(elements[i].dataset);
+            newArr.push(elements[i].dataset.color);
         }
 
         return newArr;
     }
 
-    console.log(getDatasInfo(links));
+    console.table(getDatasInfo(links));
 
 
     //zad 01
 
     console.log(homeElement);
+    console.log(childElements);
+    console.log(banner);
+    console.log(blocks);
+    console.log(links);
+
 
     for(let i = 0; i < childElements.length; i++) {
-        console.log(childElements[i]);
+        console.log('Nazwa klasy:', childElements[i].classList);
+        console.log('Nazwa tagu: ', childElements[i].tagName);
     }
 
     console.log(banner);
 
     for(let i = 0; i < blocks.length; i++) {
-        console.log(blocks[i].innerHTML);
+        console.log('Nazwa klasy:', blocks[i].classList);
+        console.log('Nazwa tagu: ', blocks[i].tagName);
     }
 
     for(let i = 0; i < links.length; i++) {
-        console.log(links[i]);
+        console.log('Nazwa klasy:', links[i].classList);
+        console.log('Nazwa tagu: ', links[i].tagName);
     }
 
 
     //zad02
 
-    for(let i = 0; i < blocks.length; i++) {
-        console.log(`${i} blocks innerHTML: ${blocks[i].innerHTML}`);
-        console.log(`${i} blocks outerHTML: ${blocks[i].outerHTML}`);
-    }
+    console.log(blocks.innerHTML);
+    console.log(blocks.outerHTML);
 
-    for(let i = 0; i < blocks.length; i++) {
-        blocks[i].innerHTML = 'Nowa wartość diva o klasie blocks';
-    }
-
-    for(let i = 0; i < blocks.length; i++) {
-        console.log(`${i} blocks innerHTML: ${blocks[i].innerHTML}`);
-    }
+    const bl = document.querySelector('.blocks');
+    bl.innerHTML = 'Nowa wartość diva o klasie blocks';
 
     // innerHTML wyswietla strukture dom wewnatrz elementu a outerHTML wyswietla wraz z elementem
     
