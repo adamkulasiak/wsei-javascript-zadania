@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     chrome.style.width = '100px';
 
     //zad02
+
     const name = document.querySelector('#name');
     const favColor = document.querySelector('#fav_color');
     const favMeal = document.querySelector('#fav_meal');
@@ -43,4 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
     name.innerHTML = 'Adam Kulasiak';
     favColor.innerHTML = 'black';
     favMeal.innerHTML = 'pizza';
+
+    //zad03
+
+    const ul = document.querySelector('.ex3 ul');
+    ul.classList.add('menu');
+
+    const allLi = ul.children;
+    for (let i = 0; i < allLi.length; i++) {
+        allLi[i].classList.add('menuElement');
+        allLi[i].classList.remove('error');
+    }
 });
