@@ -34,4 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
     firefox.nextElementSibling.setAttribute('href', 'https://www.mozilla.org/pl/firefox/new/');
     firefox.nextElementSibling.innerText = 'Firefox';
     chrome.style.width = '100px';
+
+    //zad02
+    const name = document.querySelector('#name');
+    const favColor = document.querySelector('#fav_color');
+    const favMeal = document.querySelector('#fav_meal');
+
+    name.innerHTML = 'Adam Kulasiak';
+    favColor.innerHTML = 'black';
+    favMeal.innerHTML = 'pizza';
 });
