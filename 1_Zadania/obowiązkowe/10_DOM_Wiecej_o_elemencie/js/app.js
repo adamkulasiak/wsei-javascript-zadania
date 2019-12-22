@@ -55,4 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
         allLi[i].classList.add('menuElement');
         allLi[i].classList.remove('error');
     }
+
+    //zad04
+
+    const ex4 = document.querySelectorAll('.ex4 li');
+    for(let i = 0; i < ex4.length; i++) {
+        ex4[i].dataset.id = i+1;
+    }
 });
