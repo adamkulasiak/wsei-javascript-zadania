@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./js/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -116,8 +116,149 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(_y);
     var z = 50;
   }
-  console.log(z, y);
+  console.log(z, y); //zad3
+
+  for (var i = 0; i < 10; i++) {
+    console.log('Inside loop: ', i);
+  }
+
+  console.log('Outside loop: ', i); // Poza petla zmienna i ma wartosc 10
+
+  for (var j = 0; j < 10; j++) {
+    console.log('Inside loop: ', j);
+  } //console.log('Outside loop: ', j);
+  //z zewnatrz nie ma dostepu do zmiennej j (blad na konsoli, j is not defined)
+  //zad5
+
+
+  (function () {
+    console.log('hello world');
+  })(); //zad6
+
+
+  (function (name) {
+    console.log(name);
+  })('Kazek');
 });
+
+/***/ }),
+
+/***/ "./js/zadanie01.js":
+/*!*************************!*\
+  !*** ./js/zadanie01.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//I. Sprawdź najpierw zasięg let
+var numbers = [2, 3, 4];
+{
+  //A1 - wypisuję zmienną numbers przed deklaracją
+  //Wynik w konsoli to : [2, 3, 4]
+  //Dlaczego taki wynik? z wnetrza bloku mamy dostep do zmiennej poza blokiem, w 2 strone to nie dziala:
+  console.log(numbers); //A2 - wypisuję zmienną numbers po deklaracji
+  //Wynik w konsoli to : [2, 3, 4]
+  //Dlaczego taki wynik? : z wnetrza bloku mamy dostep do zmiennej poza blokiem, w 2 strone to nie dziala:
+
+  console.log(numbers);
+} //A3 - wypisuję zmienną numbers za blokiem
+//Wynik w konsoli to : [2, 3, 4] 
+//Dlaczego taki wynik? : z wnetrza bloku mamy dostep do zmiennej poza blokiem, w 2 strone to nie dziala:
+
+console.log(numbers); //II. Sprawdź teraz  zasięg const
+
+var PI = 3.14;
+{
+  //A1 - wypisuję zmienną PI przed deklaracją
+  //Wynik w konsoli to TODO: 3.14
+  //Dlaczego taki wynik? TODO: z wnetrza bloku mamy dostep do stalej poza blokiem, w 2 strone to nie dziala
+  console.log(PI); //A2 - wypisuję zmienną PI po deklaracji
+  //Wynik w konsoli to TODO: 3.14
+  //Dlaczego taki wynik? TODO: z wnetrza bloku mamy dostep do stalej poza blokiem, w 2 strone to nie dziala
+
+  console.log(PI);
+} //A3 - wypisuję zmienną PI za blokiem
+//Wynik w konsoli to TODO: 3.14
+//Dlaczego taki wynik? TODO: z wnetrza bloku mamy dostep do stalej poza blokiem, w 2 strone to nie dziala
+
+console.log(PI);
+
+/***/ }),
+
+/***/ "./js/zadanie02.js":
+/*!*************************!*\
+  !*** ./js/zadanie02.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var character = "księżniczka";
+var timeOfDay = "dzień";
+var lover = 'Shrek';
+{
+  var _timeOfDay = "noc";
+  var _character = "ogrzyca";
+  console.log("Teraz jest: " + _timeOfDay + " i Fiona to: " + _character + ", a jej ukochany to: " + lover); // TODO: Napisz, co kryje się pod zmiennymi i wyjaśnij dlaczego.
+  // pod zmienna timeOfDay kryje sie noc, pod charakter ogrzyca a pod lover Shrek
+  // dlatego ze jestesmy wewnatrz bloku i js bierze wartosci ze zmiennych z bloku a nie z globalnych 
+}
+console.log("Teraz jest: " + timeOfDay + " i Fiona to: " + character + ", a jej ukochany to: " + lover); // TODO: Napisz, co kryje się pod zmiennymi i wyjaśnij dlaczego.
+// pod zmienna timeOfDay kryje sie dzien, pod charakter ksiezniczka a pod lover Shrek
+// dlatego ze nie mamy tu dostepu do zmiennych wewnatrz bloku i uzywane sa zmienne globalne
+
+/***/ }),
+
+/***/ "./js/zadanie04.js":
+/*!*************************!*\
+  !*** ./js/zadanie04.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//TODO: spróbuj zmienić zmienną name nadpisująć ją niżej innym imieniem.
+var name = "Agata"; //name = "Aneta";
+// nie da sie tego zrobic bo jest to stala tylko do odczytu
+//TODO:
+//a) spróbuj zmienić zmienną simpleArray nadpisująć ją niżej inną tablicą.
+//b) spróbuj dodać nową wartość do tablicy
+//c) spróbuj zmienić którąkolwiek wartość z tablicy simpleArray
+
+var simpleArray = [1, 2, 10, 4, 5]; //simpleArray = [];
+
+console.log(simpleArray); //a - nie da sie
+//b - da sie
+//c - da sie
+//Stala nie pozwala nam zmieniac referencji do tablicy, jednak mozemy modyfikowac zawartosc tej tablicy
+//TODO:
+//a) spróbuj zmienić zmienną dog nadpisująć ją niżej innym obiektem.
+//b) spróbuj zmienić właśność skill obiektu dog
+//c) spróbuj dodać nową własność do obiektu dog np. age
+
+var dog = {
+  name: "Puszek",
+  skill: "barking",
+  age: 10 //dog = {};
+  //a nie da sie
+  //b - da sie
+  //c - da sie
+  // tak samo jak przy tablicy, const nie pozwala nam zmienic referencji do obiektu, mozemy modyfikowac zawartosc obiektu
+
+};
+
+/***/ }),
+
+/***/ 0:
+/*!*******************************************************************************!*\
+  !*** multi ./js/app.js ./js/zadanie01.js ./js/zadanie02.js ./js/zadanie04.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ./js/app.js */"./js/app.js");
+__webpack_require__(/*! ./js/zadanie01.js */"./js/zadanie01.js");
+__webpack_require__(/*! ./js/zadanie02.js */"./js/zadanie02.js");
+module.exports = __webpack_require__(/*! ./js/zadanie04.js */"./js/zadanie04.js");
+
 
 /***/ })
 
