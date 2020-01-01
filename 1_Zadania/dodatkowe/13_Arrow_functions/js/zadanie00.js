@@ -1,23 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-	var getSpan = document.querySelectorAll('span');
-	var getUl = document.querySelectorAll('ul');
-
-	for (let i = 0; i < getUl.length; i++) {
-		getUl[i].style.display = 'none';
+	//zad0
+	function Students(arr) {
+		this.numberOfLetters = [],
+		this.countLetters = () => {
+			for (let i = 0; i < arr.length; i++) {
+				this.numberOfLetters.push(arr[i].length);
+			}
+		}
 	}
+	var students = new Students(["Ania", "Kamil", "Mariusz"]);
+	students.countLetters();
+	console.log(students.numberOfLetters);
 
-	for (let i = 0; i < getSpan.length; i++) {
-		getSpan[i].addEventListener('mouseover', (event) => {
-			console.log(event.target);
-			event.target.nextElementSibling.style.display = 'block';
-
-		})
-
-		getSpan[i].addEventListener('mouseout', (event) => {
-			event.target.nextElementSibling.style.display = 'none';
-		})
-
-	};
 
 });

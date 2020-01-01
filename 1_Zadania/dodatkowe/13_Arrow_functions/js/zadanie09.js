@@ -1,10 +1,18 @@
-const dog = {
-    type: "Mammal",
-    name: "",
-    setName: (newName) => {
-        this.name = newName;
-    }
+var getSpan = document.querySelectorAll('span');
+var getUl = document.querySelectorAll('ul');
+
+for (let i = 0; i < getUl.length; i++) {
+    getUl[i].style.display = 'none';
 }
 
-dog.setName("Reksio");
-console.log(dog.name);
+for (let i = 0; i < getSpan.length; i++) {
+    getSpan[i].addEventListener('mouseover', (event) => {
+        event.target.nextElementSibling.style.display = 'block';
+
+    })
+
+    getSpan[i].addEventListener('mouseout', (event) => {
+        event.target.nextElementSibling.style.display = 'none';
+    })
+
+};
