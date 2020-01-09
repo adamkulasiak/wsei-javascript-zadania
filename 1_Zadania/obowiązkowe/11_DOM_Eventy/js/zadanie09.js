@@ -16,12 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("b: ", this);
 
 
-    function innerFuncOne() {
+    function innerFuncOne(elem) {
       // Tutaj this wskazuje na element Window, bo funkcja została
       //wywołana bez żadnego kontekstu.
-      console.log("innerFuncOne: ", this);
+      console.log("innerFuncOne: ", elem);
     }
-    innerFuncOne();
+    innerFuncOne(b);
+
+    //przekaze ten element do funkcji jako argument
 
   });
 
