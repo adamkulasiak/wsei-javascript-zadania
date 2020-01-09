@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	document.querySelector('#element2').addEventListener('click', function (e) {
+		e.stopPropagation();
 		console.log('Event in #element2 fired!');
 	});
 
